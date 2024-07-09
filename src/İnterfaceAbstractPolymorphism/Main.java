@@ -2,17 +2,17 @@ package İnterfaceAbstractPolymorphism;
 
 public class Main {
     public static void main(String[] args) {
-        Interface tv = new TelevizyonModel("Televizyon", "Philips-FDR543");
+        AbstractCihaz tv = new Televizyon("Televizyon", "Philips-FDR543");
         tv.openClose();
-        ((TelevizyonModel) tv).sesAc();
+        tv.sesAc();
 
-        Interface radyom = new RadyoModel("Radyo", "Pioneer-CSD44");
+        AbstractCihaz radyom = new Radyo("Radyo", "Pioneer-CSD44");
         radyom.openClose();
-        ((RadyoModel) radyom).sesAc();
+        radyom.sesAc();
 
-        Interface hoparlorum =new HoparlorModel("Hoparlor", "Samsung-SSHP209");
+        AbstractCihaz hoparlorum =new Hoparlor("Hoparlor", "Samsung-SSHP209");
         hoparlorum.openClose();
-        ((HoparlorModel) hoparlorum).sesAc();
+        hoparlorum.sesAc();
 
     }
 }

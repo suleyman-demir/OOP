@@ -1,6 +1,6 @@
 package İnterfaceAbstractPolymorphism;
 
-public abstract class Hoparlor extends AbstractCihaz {
+public class Hoparlor extends AbstractCihaz {
     public Hoparlor(String cihazTipi, String cihazModeli) {
         super(cihazTipi, cihazModeli);
     }
@@ -9,9 +9,4 @@ public abstract class Hoparlor extends AbstractCihaz {
     }
 
 }
-class HoparlorModel extends Hoparlor{
 
-    public HoparlorModel(String cihazTipi, String cihazModeli) {
-        super(cihazTipi, cihazModeli);
-    }
-}

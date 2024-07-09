@@ -2,6 +2,7 @@ package Thread;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class SingleThreadExecutor{
 
@@ -12,6 +13,7 @@ public class SingleThreadExecutor{
             Runnable gorev = new Gorev("" + i);
             tekHavuz.execute(gorev);
         }
+        AtomicInteger atomik=new AtomicInteger(0);
 
         tekHavuz.shutdown();
     }
